@@ -4,12 +4,12 @@
     --jaune: rgba(253, 204, 1, 1);
     --noir: rgba(0, 0, 0, 1);
     --noir-clair: rgba(29, 29, 29, 1);
-    --gris-foncé: rgba(64, 63, 63, 1);
-    --gris-mi-foncé: rgba(94, 94, 94, 1);
+    --gris-fonce: rgba(64, 63, 63, 1);
+    --gris-mi-fonce: rgba(94, 94, 94, 1);
     --gris: rgba(112, 112, 112, 1);
     --gris-clair: rgba(223, 223, 223, 1);
     --blanc: rgba(255, 255, 255, 1);
-    --bleu-foncé: rgba(17, 24, 59, 1);
+    --bleu-fonce: rgba(17, 24, 59, 1);
     --bleu: rgba(13, 77, 253, 1);
     --bleu-clair: rgba(153, 193, 218, 1);
     
@@ -23,4 +23,8 @@
     --body-2: 1.12rem;
     --footer: 0.56rem;
     --base: 1rem;
-    }
+    
+
+    /* Font-family styles */
+    --font-serif: 'Russo One', 'serif';
+}

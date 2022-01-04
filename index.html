@@ -1,27 +1,39 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{menuIsOpen : false}" :class="menuIsOpen && 'menu-btn--open'">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BatImpact</title>
     <link rel="stylesheet" href="src/css/style.css">
-   
+    <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 <body>
     <header class="header">
-        <img class="header__logo" src="public/img/article_2_batmobile_co2.png" alt="Image de la Batmobile avec un nuage de Co2 derrière">
-        <h1 class="header__title">BatImpact</h1>
-        <button class="menu">
-            <span></span>
-        </button>
-        <nav>
-            <ul class="">
-                <li class="menu__item"><a class="menu__link" href="/">Accueil</a></li>
+
+        <div class="header__start">    
+            <img class="header__logo" src="public/img/article_2_batmobile_co2.png" alt="Image de la Batmobile avec un nuage de Co2 derrière">
+            <h1 class="header__title">BatImpact</h1>
+            <button class="header__menu-btn menu-btn"
+                    @click="menuIsOpen = !menuIsOpen"
+                    :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__bar"></span>
+            </button>
+        </div>
+        <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
+           <a href="index.html"><img class="menu__accueil" src="public/img/icon_maison.svg" alt="Image d'une maison"></a> 
+            <img class="menu__logo" src="public/img/logo_menu.png" alt="Image du logo de Batman">
+            <ul class="menu__list">
+                <li class="menu__item "><a class="menu__link" href="/">Accueil</a></li>
+                <hr class="menu__item--bar1">
                 <li class="menu__item"><a class="menu__link" href="article1.html">Biographie Batman</a></li>
+                <hr class="menu__item--bar2">
                 <li class="menu__item"><a class="menu__link" href="article2.html">L'impact environnemental</a></li>
+                <hr class="menu__item--bar3">
                 <li class="menu__item"><a class="menu__link" href="article3.html">Les solutions</a></li>
+                <hr class="menu__item--bar4">
                 <li class="menu__item"><a class="menu__link" href="a_propos.html">À propos</a></li>
+                <hr class="menu__item--bar5">
                 <li class="menu__item"><a class="menu__link" href="galerie.html">Galerie</a></li>
             </ul>
         </nav>
@@ -53,7 +65,7 @@
     </main>
     <footer class="footer">
         <img class="footer__mail--icone" src="public/img/icon_gmail.png" alt="Icone Gmail">
-        <a class="footer__mail--adress"href="mailto:adrien.bouteiller01@gmail.com">adrien.bouteiller01@gmail.com</a>
+        <a class="footer__mail--adress" href="mailto:adrien.bouteiller01@gmail.com">adrien.bouteiller01@gmail.com</a>
         <p class="footer__mentions">projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard</p>
         <img class="footer__mmmi--icone" src="public/img/icon_mmi.png" alt="Icone du département MMI de Montbéliard">
         <a class="footer__mmi--lien" href="http://mmimontbeliard.com/">MMI Montbéliard</a>

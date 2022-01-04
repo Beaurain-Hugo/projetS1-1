@@ -1,0 +1,25 @@
+.header{
+    background-color: var(--bleu-fonce);
+    top: 0;
+    left: 0;
+    width: 100%;
+    position:fixed;
+}
+
+.header__start{
+    display: flex;
+    justify-content:space-around;
+}
+
+.header__logo{
+    width: 22%;
+    height: 22%;
+    margin-top: 7%;
+}
+
+.header__title{
+    color: var(--jaune);
+    margin-left: -10%;
+}
+
+
