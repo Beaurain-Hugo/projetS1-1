@@ -1,0 +1,9 @@
+.article__savoir{
+    padding: 10px 0px;
+    background-color: var(--bleu-fonce);
+}
+
+.savoir__phrase{
+    text-align: center;
+    color:var(--blanc);
+}

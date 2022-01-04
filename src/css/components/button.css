@@ -12,3 +12,17 @@
     color: var(--noir);
 
 }
+
+.article__suiv{
+    background-color: var(--jaune);
+    padding: 15px 15px;
+    border-radius: 20px;
+    font-family: var(--font-serif);
+    font-size:var(--heading-4);
+    text-align: center;
+    margin-left: var(--space-button2);
+    margin-right:var(--space-button1);
+    display: block;
+    margin-bottom:5%;
+    color: var(--noir);
+}

@@ -18,12 +18,16 @@
 
 .footer__mail--adress{
     align-self: center;
+    font-size: var(--footer);
+
     color:var(--gris-mi-fonce);
 
 }
 
 .footer__mentions{
     text-align: center;
+    font-size: var(--footer);
+
     width: 300px;
     margin-left:37px;
 }
@@ -43,6 +47,8 @@
 .footer__mmi--lien{
     color:var(--gris-mi-fonce);
     padding-top:12px;
+    font-size: var(--footer);
+
 
 }
 .footer__reseaux{
@@ -55,6 +61,8 @@
 
 .footer__name{
     margin-left: 50px;
+    font-size: var(--footer);
+
 }
 
 

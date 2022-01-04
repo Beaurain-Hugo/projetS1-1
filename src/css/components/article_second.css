@@ -1,0 +1,7 @@
+.article__second--title{
+    font-family: var(--font-serif);
+    font-size: var(--heading-3);
+    margin-left:var(--space-left);
+    margin-right: var(--space-title-body);
+}
+

@@ -1,0 +1,18 @@
+.illu{
+    background-color: var(--jaune);
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.illu__img{
+
+    align-self:center;
+    width: 50%;
+}
+
+
+.illu__img2{
+    align-self:center;
+    width: 25%;
+}

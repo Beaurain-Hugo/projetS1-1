@@ -6,11 +6,17 @@
 
 *{
     font-family: var(--font-sans-serif);
+    font-size: var(--body);
 }
 
 h2, h3, h4{
     margin-left:var(--space1xl);
     margin-right:var(--space2xr);
+}
+
+p{
+    margin-left: var(--space-left);
+    margin-right: var(--space-body-right);
 }
 
 a{

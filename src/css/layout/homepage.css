@@ -3,6 +3,10 @@
     flex-direction: column;
 }
 
+.homepage__begin--illustration{
+    margin-top:21%;
+}
+
 .homepage__begin{
     background-color: var(--noir);
 }

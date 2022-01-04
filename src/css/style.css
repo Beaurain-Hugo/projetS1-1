@@ -21,3 +21,8 @@
 /* Importation des components */
 @import url('components/menu.css');
 @import url('components/button.css');
+@import url('components/article_begin.css');
+@import url('components/article_first.css');
+@import url('components/savoir.css');
+@import url('components/article_second.css');
+@import url('components/illustration.css');

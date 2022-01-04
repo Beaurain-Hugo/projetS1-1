@@ -1,0 +1,25 @@
+.article__first{
+    background-color: var(--gris-clair);
+    padding:3% 0%;
+}
+
+.article__first--title{
+    font-family: var(--font-serif);
+    font-size:var(--heading-2);
+    margin-left:var(--space-left);
+    margin-right:var(--space-title-right)
+
+}
+
+.article__first--para{
+    margin-left:var(--space-left);
+    margin-right:var(--space-body-right);
+}
+
+.article__first--subtitle{
+    font-family: var(--font-serif);
+    font-size: var(--heading-3);
+    margin-left:var(--space-left);
+    margin-right:var(--space-title-right)
+}
+
