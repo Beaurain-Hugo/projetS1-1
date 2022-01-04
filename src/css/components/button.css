@@ -26,3 +26,10 @@
     margin-bottom:5%;
     color: var(--noir);
 }
+
+.form-btn__answer{
+    background-color: var(--blanc);
+    margin: 0px 100px;
+    padding: 30px 0px;
+    border-radius: 25px;
+}

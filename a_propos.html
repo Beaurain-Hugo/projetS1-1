@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen : false}" :class="menuIsOpen && 'menu-btn--open'">
+<html lang="fr" x-data="{menuIsOpen : false}" :class="menuIsOpen && 'menu-btn--open'" >
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="src/css/style.css">
     <script src="//unpkg.com/alpinejs" defer></script>
 </head>
-<body>
+<body x-data="{formIsOpen : false}" :class="formIsOpen && 'form-btn--open'">
     <header class="header">
 
         <div class="header__start">    
@@ -24,7 +24,7 @@
            <a href="index.html"><img class="menu__accueil" src="public/img/icon_maison.svg" alt="Image d'une maison"></a> 
             <img class="menu__logo" src="public/img/logo_menu.png" alt="Image du logo de Batman">
             <ul class="menu__list">
-                <li class="menu__item "><a class="menu__link" href="/">Accueil</a></li>
+                <li class="menu__item "><a class="menu__link" href="index.html">Accueil</a></li>
                 <hr class="menu__item--bar1">
                 <li class="menu__item"><a class="menu__link" href="article1.html">Biographie Batman</a></li>
                 <hr class="menu__item--bar2">
@@ -39,39 +39,46 @@
         </nav>
     </header>
     <main>
-        <img src="public/img/background_contact.jpg" alt="Image avec un téléphone, un arobase et des enveloppes">
-        <button>
-            <span>me contacter</span>
-        </button>
-        <div>
-            <h2>Formulaire</h2>
-            <p>Pour me contacter veillez à bien remplir ce formulaire</p>
+        <div class="article">
+            <img class="article__begin--img form-img" src="public/img/background_contact.jpg" alt="Image avec un téléphone, un arobase et des enveloppes">
+            <button class="form-btn"
+                    @click="formIsOpen = !formIsOpen"
+                    :class="formIsOpen && 'form-btn--open'">
+                <span class="form-btn__text">me contacter</span>
+            </button>
         </div>
-        <form>
-            <p>
-                <label for="lastname">
-                    <input type="text" id="lastname" name="last-name" value="" placeholder="Nom" size="40">
-                </label>
-            </p>
-            <p>
-                <label for="firstname">
-                    <input type="text" id="firstname" name="first-name" value="" placeholder="Prénom" size="40">
-                </label>
-            </p>
-            <p>
-                <label for="email">
-                    <input type="email" id="email" name="email" value="" placeholder="E-mail" size="40">
-                </label>
-            </p>
-            <p>
-                <label for="message">
-                    <textarea id="message" name="message"  placeholder="Texte..." rows="10"></textarea>
-                </label>
-            </p>
-        </form>
-        <button type="submit">
-            <span>Valider</span>
-        </button>
+        <div class="form" :class="formIsOpen && 'form--open'">
+            <div>
+                <span class="form-btn__cross"></span>
+                <h2 class="form__title">Formulaire</h2>
+                <p class="form__text">Pour me contacter veillez à bien remplir ce formulaire</p>
+            </div>
+            <form>
+                <p>
+                    <label for="lastname">
+                        <input type="text" id="lastname" name="last-name" value="" placeholder="Nom" size="40">
+                    </label>
+                </p>
+                <p>
+                    <label for="firstname">
+                        <input type="text" id="firstname" name="first-name" value="" placeholder="Prénom" size="40">
+                    </label>
+                </p>
+                <p>
+                    <label for="email">
+                        <input type="email" id="email" name="email" value="" placeholder="E-mail" size="40">
+                    </label>
+                </p>
+                <p>
+                    <label for="message">
+                        <textarea id="message" name="message"  placeholder="Texte..." rows="10" size="40"></textarea>
+                    </label>
+                </p>
+            </form>
+            <button class="form-btn__answer" type="submit">
+                <span>Valider</span>
+            </button>
+        </div>
         <div>
             <h2>Autres projets</h2>
             <figure>
