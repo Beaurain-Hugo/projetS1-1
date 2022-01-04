@@ -1,0 +1,14 @@
+.homepage__article--suite{
+    background-color: var(--jaune);
+    padding: 15px 60px;
+    border-radius: 20px;
+    font-family: var(--font-serif);
+    font-size:var(--heading-5);
+    text-align: center;
+    margin-left: var(--space-button1);
+    margin-right:var(--space-button1);
+    display: block;
+    margin-bottom:10%;
+    color: var(--noir);
+
+}

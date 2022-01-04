@@ -111,7 +111,8 @@
 .menu-btn--open .menu-btn__bar,
 .menu-btn--open .menu-btn__bar::before,
 .menu-btn--open .menu-btn__bar::after {
-   display: none;
+ 
+    display: none;
 }
 
 .menu__accueil{

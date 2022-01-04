@@ -20,11 +20,20 @@
     --heading-2: 1.5rem;
     --heading-3: 1.19rem;
     --heading-4: 0.81rem;
+    --heading-5: 2.25rem;
     --body-2: 1.12rem;
     --footer: 0.56rem;
     --base: 1rem;
     
 
-    /* Font-family styles */
+/* Font-family styles */
     --font-serif: 'Russo One', 'serif';
+    --font-sans-serif: 'Poppins', 'sans serif';
+
+
+/* Space styles */
+    --space-left: 33px;
+    --space-body-right: 40px;
+    --space-title-right: 12px;
+    --space-button1: 10px;
 }

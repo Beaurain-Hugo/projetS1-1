@@ -40,14 +40,16 @@
     </header>
     <main>
         <div class="homepage">
-            <img class="homepage__illustration" src="public/img/gotham_city.jpg" alt="Image de Gotham City">
-            <h2 class="homepage__title">Batman un super-héros qui pollue ?</h2>
-            <p class="homepage__introduction">Batman est un super-héros connu par tout le monde. Avec un costume ressemblant à une chauve-souris, cet héros de l'ombre part lutter contre le crime pendant la nuit. Mais, malheureusement cela créer des conséquences écologique importantes. Sa Batmobile en est la preuve.</p>
+            <div class="homepage__begin">
+                <img class="homepage__begin--illustration" src="public/img/gotham_city.jpg" alt="Image de Gotham City">
+                <h2 class="homepage__begin--title">Batman un super-héros qui pollue ?</h2>
+                <p class="homepage__begin--introduction">Batman est un super-héros connu par tout le monde. Avec un costume ressemblant à une chauve-souris, cet héros de l'ombre part lutter contre le crime pendant la nuit. Mais, malheureusement cela créer des conséquences écologique importantes. Sa Batmobile en est la preuve.</p>
+            </div>
             <section class="homepage__article">
                 <img class="homepage__article--img" src="public/img/article_1_batman.jpg" alt="Image de Nuits d'Halloween">
                 <h3 class="homepage__article--title">Biographie de Batman</h3>
                 <p class="homepage__article--introduction">Batman est un héros de fiction créé par DC comics en 1939. Dernièrement apparu dans justice League. Son histoire promet d'être encore</p>
-                <a class="homepage__article--suite" href="/">Lire la suite</a>
+                <a class="homepage__article--suite" href="article1.html">Lire la suite</a>
             </section>
             <section class="homepage__article">
                 <img class= "homepage__article--img" src="public/img/article_2_batman.jpg" alt="Image d'un laboratoire">
@@ -55,24 +57,33 @@
                 <p class="homepage__article--introduction">Malgré que Batman soit un super-héros, il est un des héros qui pollue le plus. En effet, on peut le voir avec ça Batmobile qui consomme beaucoup.</p>
                 <a class="homepage__article--suite" href="/">Lire la suite</a>
             </section>
-            <section class="homepage__article">
-                <img class="homepage__article--img" src="public/img/article_3_batman.jpg" alt="Image de batman regardant le batsignal remplacé par un arbre">
-                <h3 class="homepage__article--title">Les solutions possible</h3>
-                <p class="homepage__article--introduction">On a plusieurs solutions à ce problème. Mais alors quelle est la meilleur de ces solutions ?</p>
+            <section class="homepage__article background__blue">
+                <img class="homepage__article--img " src="public/img/article_3_batman.jpg" alt="Image de batman regardant le batsignal remplacé par un arbre">
+                <h3 class="homepage__article--title background__blue__texte">Les solutions possible</h3>
+                <p class="homepage__article--introduction background__blue__texte">On a plusieurs solutions à ce problème. Mais alors quelle est la meilleur de ces solutions ?</p>
                 <a class="homepage__article--suite" href="">Lire la suite</a>
             </section>
         </div>
     </main>
     <footer class="footer">
-        <img class="footer__mail--icone" src="public/img/icon_gmail.png" alt="Icone Gmail">
-        <a class="footer__mail--adress" href="mailto:adrien.bouteiller01@gmail.com">adrien.bouteiller01@gmail.com</a>
+        <div class="footer__mail">
+            <img class="footer__mail--icone" src="public/img/icon_gmail.png" alt="Icone Gmail">
+            <a class="footer__mail--adress" href="mailto:adrien.bouteiller01@gmail.com">adrien.bouteiller01@gmail.com</a>
+        </div>    
         <p class="footer__mentions">projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard</p>
-        <img class="footer__mmmi--icone" src="public/img/icon_mmi.png" alt="Icone du département MMI de Montbéliard">
-        <a class="footer__mmi--lien" href="http://mmimontbeliard.com/">MMI Montbéliard</a>
-        <img class="footer__reseaux" src="public/img/icon_twitter.png" alt="Icone Twitter">
-        <img class="footer__reseaux" src="public/img/icon_facebook.png" alt="Icone Facebook">
-        <img class="footer__reseaux" src="public/img/icon_instagram.png" alt="Icone Instagram">
-        <p class="footer__name">PierrePolJ</p>
+        <div class="footer__end">
+            <div class="footer__mmi">
+                <img class="footer__mmi--icone" src="public/img/icon_mmi.png" alt="Icone du département MMI de Montbéliard">
+                <a class="footer__mmi--lien" href="http://mmimontbeliard.com/">MMI Montbéliard</a>
+            </div>
+            <div class="footer__reseaux">   
+                    <img class="footer__reseaux--twitter" src="public/img/icon_twitter.png" alt="Icone Twitter">
+                    <img class="footer__reseaux--facebook" src="public/img/icon_facebook.png" alt="Icone Facebook">
+                    <img class="footer__reseaux--instagram" src="public/img/icon_instagram.png" alt="Icone Instagram">
+
+                <p class="footer__name">PierrePolJ</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

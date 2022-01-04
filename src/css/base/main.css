@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+*{
+    font-family: var(--font-sans-serif);
+}
+
+h2, h3, h4{
+    margin-left:var(--space1xl);
+    margin-right:var(--space2xr);
+}
+
 a{
     text-decoration: none;
 }

@@ -1,0 +1,7 @@
+.background__blue{
+    background-color: var(--bleu-fonce);
+}
+
+.background__blue__texte{
+    color: var(--blanc);
+}

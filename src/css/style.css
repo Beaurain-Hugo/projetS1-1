@@ -14,6 +14,10 @@
 
 /* Importation des layouts */
 @import url('layout/header.css');
+@import url('layout/homepage.css');
+@import url('layout/background.css');
+@import url('layout/footer.css');
 
 /* Importation des components */
 @import url('components/menu.css');
+@import url('components/button.css');
