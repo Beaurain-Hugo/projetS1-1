@@ -7,6 +7,10 @@
     <title>Biographie de Batman</title>
     <link rel="stylesheet" href="src/css/style.css">
     <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="https://animejs.com/lib/anime.min.js"></script>
+    <script src="src/js/fonctions.js"></script>
+
+
 </head>
 <body>
     <header class="header">
@@ -41,7 +45,14 @@
     <main>
         <article class="article">
             <div class="article__begin">
-                <img class="article__begin--img" src="public/img/article_1_batman.jpg" alt="Image de Nuits d'Halloween">
+                <div class="visionneuse--1">
+                    <div class= "image"
+                         x-on:mouseover="monterLegende('cape-1');"
+					     x-on:mouseleave="descendreLegende();">
+                    <figure>
+                        <img class="article__begin--img" src="public/img/article_1_batman.jpg" alt="Image de Nuits d'Halloween"></div>
+                    <figcaption class="legende cape-1" >Page du Comic Nuits d'Halloween</figcaption></figure>
+                </div>
                 <p class="article__begin--introduction">Batman est un super-héros qui existe depuis longtemps. Comme il n'a pas de super pouvoir il a dû créé une multitudes d’armes qui lui permet de protéger Gotham City et de devenir un super-héros.</p>
             </div>
             <div class="article__first">
@@ -56,12 +67,15 @@
             </div>
             
             <div class="article__second">
-                <figure>
-                    <figcaption class="legende" >Costume de Batman</figcaption>
-                    <img class="article__second--img" 
-                         x-on:mouseover="monterLegende();" 
-                         x-on:mouseleave="descendreLegende();" src="public/img/article_1_equipement.jpg" alt="Image du costume de Batman">
-                </figure>
+                <div class="visionneuse--2">
+                    <div class= "image"
+                         x-on:mouseover="monterLegende('cape-2');"
+					     x-on:mouseleave="descendreLegende();">
+                    <figure>
+                         <img class="article__second--img" src="public/img/article_1_equipement.jpg" alt="Image du costume de Batman"></div>
+                    <figcaption class="legende cape-2" >Costume de Batman</figcaption></figure>
+
+                </div>
                 <h2 class="article__second--title">Les équipements de Batman</h2>
                 <p class="article__second--para">Batman a beaucoup d’armes différentes pour combattre le crime. Ces armes lui font compenser le fait qu’il n’a aucun super-pouvoirs. Dans les armes les plus connues qu ‘il utilise on retrouve le «Batarang», le «Batgrappin», la «Batmobile», et encore beaucoup</p>
                 <div class="illu">
@@ -75,7 +89,13 @@
                 <p class="article__second--para">Il possède aussi beaucoup d’autres équipements qui lui permettent d’être discret. On peut prendre l’exemple des balles fumigènes, comme son nom l’indique elles permettent d’émettre de la fumée. Son costume noir lui sert aussi de camouflage pour ne pas se faire repérer.</p>
             </div>
             <div class="article__second">
-                <img class="article__second--img" src="public/img/article_1_batmobile_2.jpg" alt="Image des différents modèles de la Batmobile">
+                <div class="visionneuse--3">
+                    <div class= "image"
+                         x-on:mouseover="monterLegende('cape-3');"
+					     x-on:mouseleave="descendreLegende();">
+                    <figure>
+                        <img class="article__second--img" src="public/img/article_1_batmobile_2.jpg" alt="Image des différents modèles de la Batmobile"></div>
+                        <figcaption class="legende cape-3" >Modèles de la Batmobile</figcaption></figure>
                 <h3 class="article__second--title">La batmobile</h3>
                 <p classs="article__second--para">La Batmobile est sûrement une des armes les plus connu de la saga. Elle est apparu pour la première fois en 1941. Depuis, elle a beaucoup évoluer et par moment la Batmobile est équipées d’armes offensive. Comme par exemple, des rockets, des lasers etc. La Batmobile est un véhicule très puissant qui permet à Batman de se déplacer très rapidement. Elle est entreposée dans sa Batcave ou Batman range tout son équipement.</p>
             </div>

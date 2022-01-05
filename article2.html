@@ -42,7 +42,14 @@
     <main>
         <article class="article">
             <div class="article__begin">
-                <img class="article__begin--img" src="public/img/article_2_batman.jpg" alt="Image de Batman">
+                <div class="visionneuse--3">
+                    <div class= "image"
+                         x-on:mouseover="monterLegende('cape-3');"
+					     x-on:mouseleave="descendreLegende();">
+                    <figure>
+                        <img class="article__begin--img" src="public/img/article_2_batman.jpg" alt="Image de Batman"></div>
+                        <figcaption class="legende cape-3" >Modèles de la Batmobile</figcaption></figure>
+                
                 <p class="article__begin--introduction">La Batmobile permet à Batman de se déplacer rapidement. C'est une voiture extrêmement puissante et rapide, mais elle est aussi dangereuse pour l'environnement .</p>
             </div>
             <div class="article__first">

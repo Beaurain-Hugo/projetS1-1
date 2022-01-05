@@ -44,11 +44,11 @@ function carrousel() {
     });
 }
 
-function monterLegende() {
-    document.querySelector('.legende').style.display= 'block';
+function monterLegende(cla) {
+    document.querySelector('.'+cla).style.display= 'block';
     return anime({
-        targets: '.legende',
-        translateY: '5em',
+        targets: '.'+cla,
+        translateY: '-5em',
         autoplay: false,
         easing: 'linear',
         duration: 200
@@ -57,11 +57,13 @@ function monterLegende() {
 }
 
 function descendreLegende() {
+    
 	return anime({
         targets: '.legende',
-        translateY: '-26em',
+        translateY: '3em',
         autoplay: false,
         easing: 'linear',
         duration: 200,
     }).play;
 }
+
