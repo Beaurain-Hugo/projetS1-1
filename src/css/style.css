@@ -18,6 +18,7 @@
 @import url('layout/background.css');
 @import url('layout/footer.css');
 @import url('layout/galerie.css');
+@import url('layout/carrousel.css');
 
 /* Importation des components */
 @import url('components/menu.css');

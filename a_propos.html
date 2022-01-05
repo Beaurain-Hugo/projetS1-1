@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>À propos</title>
     <link rel="stylesheet" href="src/css/style.css">
+    <script src="https://animejs.com/lib/anime.min.js"></script>
     <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="src/js/fonctions.js"></script>
+
 </head>
 <body x-data="{formIsOpen : false}" :class="formIsOpen && 'form-btn--open'">
     <header class="header">
@@ -49,71 +52,74 @@
         </div>
         <div class="form" :class="formIsOpen && 'form--open'">
             <div>
-                <span class="form-btn__cross"></span>
+                <button class="form-close"
+                @click="formIsOpen = !formIsOpen"
+                :class="formIsOpen && 'form-btn--open'">
+                    <img class="form-btn__cross" src="public/img/cross.svg"></img>
+                </button>
                 <h2 class="form__title">Formulaire</h2>
                 <p class="form__text">Pour me contacter veillez à bien remplir ce formulaire</p>
             </div>
-            <form>
-                <p>
-                    <label for="lastname">
-                        <input type="text" id="lastname" name="last-name" value="" placeholder="Nom" size="40">
-                    </label>
-                </p>
-                <p>
-                    <label for="firstname">
-                        <input type="text" id="firstname" name="first-name" value="" placeholder="Prénom" size="40">
-                    </label>
-                </p>
-                <p>
-                    <label for="email">
-                        <input type="email" id="email" name="email" value="" placeholder="E-mail" size="40">
-                    </label>
-                </p>
-                <p>
-                    <label for="message">
-                        <textarea id="message" name="message"  placeholder="Texte..." rows="10" size="40"></textarea>
-                    </label>
-                </p>
+            <form class="formulaire">
+                <label class="formulaire__space" for="lastname" >Nom
+                    <input type="text" class="lastname" id="lastname" name="last-name" value=""  size="22">
+                </label>
+                <label class="formulaire__space" for="firstname">Prénom
+                    <input type="text" class="firstname" id="firstname" name="first-name" value="" size="22">
+                </label>
+                <label class="formulaire__space" for="email">E-mail
+                    <input type="email" class="email" id="email" name="email" value="" size="22" height="10">
+                </label>
+                <label class="formulaire__space" for="message">
+                    <textarea class="space__text" id="message" name="message"  placeholder="Texte..." rows="10"></textarea>
+                </label>
             </form>
-            <button class="form-btn__answer" type="submit">
-                <span>Valider</span>
+            <button class="form-btn__answer answer" type="submit">
+                <span class="answer__text" >Valider</span>
             </button>
         </div>
         <div>
             <h2>Autres projets</h2>
-            <figure>
-                <img src="public/img/black_panther.jpg" alt="Image de black panther">
-                <figcaption>Black Panther</figcaption>
-            </figure>
-            <figure>
-                <img src="public/img/x_men.jpg" alt="Image des X-Men">
-                <figcaption>X-MEN</figcaption>
-            </figure>
-            <figure>
-                <img src="public/img/ghost_rider.jpg" alt="Image de Ghost Rider">
-                <figcaption>Ghost Rider</figcaption>
-            </figure>
-            <figure>
-                <img src="public/img/aquaman.jpg" alt="Image d'Aquaman">
-                <figcaption>Aquaman</figcaption>
-            </figure>
-            <figure>
-                <img src="public/img/gardiens_galaxie.jpg" alt="Image des Gardiens de la Galaxie">
-                <figcaption>Les Gardiens de la Galaxie</figcaption>
-            </figure>
-            <figure>
-                <img src="public/img/deadpool.jpg" alt="Image de Deadpool">
-                <figcaption>Deadpool</figcaption>
-            </figure>
-            <figure>
-                <img src="public/img/captain_marvel.jpg" alt="Image de Captain Marvel">
-                <figcaption>Captain Marvel</figcaption>
-            </figure>
-            <figure>
-                <img src="public/img/flash.jpg" alt="Image de Flash">
-                <figcaption>Flash</figcaption>
-            </figure>
+            <div class="carrousel">
+                <div class="images15">
+                    <figure>
+                        <img class="image15" src="public/img/black_panther.jpg" alt="Image de black panther">
+                        <figcaption>Black Panther</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="image15" src="public/img/x_men.jpg" alt="Image des X-Men">
+                        <figcaption>X-MEN</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="image15" src="public/img/ghost_rider.jpg" alt="Image de Ghost Rider">
+                        <figcaption>Ghost Rider</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="image15" src="public/img/aquaman.jpg" alt="Image d'Aquaman">
+                        <figcaption>Aquaman</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="image15" src="public/img/gardiens_galaxie.jpg" alt="Image des Gardiens de la Galaxie">
+                        <figcaption>Les Gardiens de la Galaxie</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="image15" src="public/img/deadpool.jpg" alt="Image de Deadpool">
+                        <figcaption>Deadpool</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="image15" src="public/img/captain_marvel.jpg" alt="Image de Captain Marvel">
+                        <figcaption>Captain Marvel</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="image15" src="public/img/flash.jpg" alt="Image de Flash">
+                        <figcaption>Flash</figcaption>
+                    </figure>
+                </div>
+            </div>
         </div>
+        <script>
+            carrousel();
+        </script>
     </main>
     <footer class="footer">
         <div class="footer__mail">

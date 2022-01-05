@@ -11,6 +11,7 @@
     background-color: var(--jaune);
     transform: translateX(100%);
     transition: all .8s ease;
+    z-index:10;
 }
 
 .form--open{
@@ -45,10 +46,39 @@
     font-family: var(--font-serif);
 }
 
-.form-btn--open .form-btn__cross,
-.form-btn--open .form-btn__cross::before,
-.form-btn--open .form-btn__cross::after {
-    transform: rotate(90deg);
+.form-btn__cross{
+    margin-top:30px;
+    margin-left:30px;
+    
+}
 
-    background-color: var(--noir);
+.form-close{
+    background: none;
+    border: none;
+}
+
+.formulaire{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulaire__space{
+    margin-bottom: 20px;
+}
+
+.space__text{
+    width: 250px;
+}
+
+label{
+    border:2px solid;
+    margin-right: 68px;
+    background-color: var(--gris-clair);
+}
+
+input{
+    margin-left:58px;
+    border-right: 2px solid;
+    border-color:var(--gris);
 }
