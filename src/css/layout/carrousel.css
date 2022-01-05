@@ -29,3 +29,10 @@ figure {
     left: 0;
     margin:0;
 }
+
+.carroussel__title{
+    font-family: var(--font-serif);
+    font-size: var(--heading-3);
+    color:var(--blanc);
+    margin-left: var(--space-left);
+}
