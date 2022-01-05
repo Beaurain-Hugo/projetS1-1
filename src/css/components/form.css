@@ -1,3 +1,7 @@
+.background{
+    background-color: var(--gris-fonce);
+}
+
 .form{
     visibility: hidden;
     opacity: 0;
