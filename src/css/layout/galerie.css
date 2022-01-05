@@ -1,0 +1,50 @@
+.galerie{
+    margin-top:70px;
+    background-color: var(--gris-fonce);
+    padding-bottom:266px;
+}
+
+.galerie__title{
+    font-family: var(--font-serif);
+    font-size: var(--heading-2);
+    color: var(--blanc);
+    margin-left: var(--space-left);
+    padding-top: 5%;
+}
+
+
+.first__line{
+    display: flex;
+    justify-content: space-around;
+}
+.galerie__image--1{
+    width: 60%;
+    height: 60%;
+}
+
+
+
+.galerie__image--2{
+    width: 20%;
+}
+
+.second__line{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1%;
+    margin-left: 12%;
+
+}
+
+.galerie__image--3{
+    width: 30%;
+    height: 30%;
+}
+
+.galerie__image--4{
+    width: 65%;
+}
+
+.galerie__image--5{
+    width: 65%;
+}

@@ -39,14 +39,20 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h2>Galerie</h2>
-            <img src="public/img/galerie_1.jpg" alt="Image 1">
-            <img src="public/img/galerie_2.jpg" alt="Image 2">
-            <img src="public/img/galerie_3.jpg" alt="Image 3">
-            <img src="public/img/galerie_4.jpg" alt="Image 4">
-            <img src="public/img/galerie_5.jpg" alt="Image 5">
-        </section>
+        <div class="galerie">
+            <h2 class="galerie__title">Galerie</h2>
+            <div class=first__line>
+                <img class="galerie__image galerie__image--1" src="public/img/galerie_1.jpg" alt="Image 1">
+                <img class="galerie__image galerie__image--2" src="public/img/galerie_2.jpg" alt="Image 2">
+            </div>
+            <div class="second__line">
+                <img class="galerie__image galerie__image--3" src="public/img/galerie_3.jpg" alt="Image 3">
+                <div class=column>
+                    <img class="galerie__image galerie__image--4" src="public/img/galerie_4.jpg" alt="Image 4">
+                    <img class="galerie__image galerie__image--5" src="public/img/galerie_5.jpg" alt="Image 5">
+                </div>
+            </div>
+        </div>
     </main>
     <footer class="footer">
         <div class="footer__mail">
