@@ -4,7 +4,7 @@
 }
 
 .homepage__begin--illustration{
-    margin-top:21%;
+    margin-top:18%;
 }
 
 .homepage__begin{
@@ -42,3 +42,14 @@
     color:var(--gris-mi-fonce)
 }
 
+.homepage__begin--illustration2{
+    height: 300px;
+    width: 375px;
+    margin-top:-350px;
+}
+
+.img--click2{
+    visibility: hidden;
+    z-index:1;
+
+}

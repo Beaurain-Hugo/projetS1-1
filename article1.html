@@ -56,7 +56,12 @@
             </div>
             
             <div class="article__second">
-                <img class="article__second--img" src="public/img/article_1_equipement.jpg" alt="Image du costume de Batman">
+                <figure>
+                    <figcaption class="legende" >Costume de Batman</figcaption>
+                    <img class="article__second--img" 
+                         x-on:mouseover="monterLegende();" 
+                         x-on:mouseleave="descendreLegende();" src="public/img/article_1_equipement.jpg" alt="Image du costume de Batman">
+                </figure>
                 <h2 class="article__second--title">Les équipements de Batman</h2>
                 <p class="article__second--para">Batman a beaucoup d’armes différentes pour combattre le crime. Ces armes lui font compenser le fait qu’il n’a aucun super-pouvoirs. Dans les armes les plus connues qu ‘il utilise on retrouve le «Batarang», le «Batgrappin», la «Batmobile», et encore beaucoup</p>
                 <div class="illu">

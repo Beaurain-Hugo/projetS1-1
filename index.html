@@ -38,10 +38,15 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main x-data="{firstImgClick : false}" :class="firstImgClick && 'img--click'">
         <div class="homepage">
             <div class="homepage__begin">
-                <img class="homepage__begin--illustration" src="public/img/gotham_city.jpg" alt="Image de Gotham City">
+                <img class="homepage__begin--illustration"
+                     @click="firstImgClick = !firstImgClick"
+                     :class="firstImgClick && 'img--click'" src="public/img/gotham_city_2.jpg" alt="Image de Gotham City">
+                <img class="homepage__begin--illustration homepage__begin--illustration2"
+                     @click="firstImgClick = !firstImgClick"
+                     :class="firstImgClick  && 'img--click2'" src="public/img/gotham_city.jpg" alt="Image de Gotham City">
                 <h2 class="homepage__begin--title">Batman un super-héros qui pollue ?</h2>
                 <p class="homepage__begin--introduction">Batman est un super-héros connu par tout le monde. Avec un costume ressemblant à une chauve-souris, cet héros de l'ombre part lutter contre le crime pendant la nuit. Mais, malheureusement cela créer des conséquences écologique importantes. Sa Batmobile en est la preuve.</p>
             </div>

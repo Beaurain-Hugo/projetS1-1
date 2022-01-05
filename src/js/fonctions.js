@@ -15,8 +15,8 @@ function carrousel() {
 
     anim15.add({
         targets: images15,
-        translateX: [{value: '500', duration: d},
-                     {value: '-500', duration: 0, delay: function(img,ind) {
+        translateX: [{value: '224', duration: d},
+                     {value: '-224', duration: 0, delay: function(img,ind) {
                          if (ind == 0) return (7*delta)+(6*d);
                          if (ind == 1) return (6*delta)+(5*d);
                          if (ind == 2) return (5*delta)+(4*d);
@@ -42,4 +42,26 @@ function carrousel() {
             return (8*delta)+(7*d);
         }
     });
+}
+
+function monterLegende() {
+    document.querySelector('.legende').style.display= 'block';
+    return anime({
+        targets: '.legende',
+        translateY: '5em',
+        autoplay: false,
+        easing: 'linear',
+        duration: 200
+    }).play;
+
+}
+
+function descendreLegende() {
+	return anime({
+        targets: '.legende',
+        translateY: '-26em',
+        autoplay: false,
+        easing: 'linear',
+        duration: 200,
+    }).play;
 }

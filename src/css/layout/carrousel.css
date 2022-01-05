@@ -1,17 +1,15 @@
 .carrousel {
-	grid-column: 2;
-	grid-row: 2;
-	width: 299px;
+	width: 224px;
 	position: relative;
 	overflow: hidden;
+    margin-left:76px;
+    margin-bottom:235px;
+    z-index:0;
 }
-
-
 
 .images15 {
 	width: 2300px;
 	height: 132px;
-	left:50px;
 }
 
 .images15 img {
@@ -22,6 +20,12 @@
 .image15{
 	position: absolute;
 	top:0;
-	left:75px;
 	z-index: 0;
+    width: 224px;
+	height: 132px;
+}
+
+figure {
+    left: 0;
+    margin:0;
 }

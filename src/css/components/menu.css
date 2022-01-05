@@ -12,6 +12,7 @@
     background: linear-gradient(#111111, #444444);
     transform: translateX(100%);
     transition: all .8s ease;
+    
 }
   
 .menu--open {
